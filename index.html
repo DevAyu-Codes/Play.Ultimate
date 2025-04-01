@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Play.Ultimate Login</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://smtpjs.com/v3/smtp.js"> </script>
+        <script src="https://kit.fontawesome.com/2fc19a9210.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div class="loginDiv">
+                <div class="alignmentDiv">
+                    <div class="headerDiv">
+                        <h1 class="amatic-sc-bold">play.ultimate</h1>
+                    </div>
+                    <div class="formDiv amatic-sc-regular">
+                        <h2 id="name">Name:</h2>
+                        <input type="text" placeholder="Ayush" class="amatic-sc-regular" id="nameInput">
+                        <h2 id="email">Email:</h2>
+                        <input type="text" placeholder="ayushkumar274549@gmail.com" class="amatic-sc-regular" id="emailInput">
+                        <h2 id="password">Password:</h2>
+                        <input type="password" placeholder="PasswordForSafety@999" class="amatic-sc-regular" id="passwordInput">
+                        <a onclick="seePass()">
+                            <i class="fas fa-eye passIcon" id="passEye"></i>
+                        </a>
+                        <h2 id="phone">Phone:</h2>
+                        <input type="text" placeholder="9868642936" class="amatic-sc-regular" id="phoneInput">
+                        <h2 id="secret">Any secret:</h2>
+                        <input type="text" placeholder="I am a secret hacker ;)" class="amatic-sc-regular" id="secretInput">
+                        <div class="formDivButton">
+                            <button class="amatic-sc-regular" id="button" onclick="register()" value="register">Register</button>
+                        </div>
+                        <div class="formDivButton">
+                            <h3 class="amatic-sc-regular" id="bottomText">One of us? <a onclick="loginLayoutFunction()">Login with credentials</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AlertMessage" id="AlertMessage">
+            <div class="MessageContent">
+                <div class="AlertContent amatic-sc-bold" id="AlertContent"></div>
+                <div class="AlertDiv">
+                    <button class="btn amatic-sc-regular" onclick="document.getElementById('AlertMessage').style.display = 'none';" id="Alertbutt">Okay</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

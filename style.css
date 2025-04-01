@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.mainDiv{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background: url("images/background.png");
+    background-size: cover;
+    background-position: right 30px center;
+    display: flex;
+    justify-content: center;
+}
+
+.loginDiv{
+    margin: 50px 0px 50px 0px;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+}
+
+.headerDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.formDiv{
+    margin-top: -50px;
+    width: 100%;
+}
+
+.formDiv h2{
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.formDiv input{
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-top: -30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.formDivButton{
+    display: flex;
+    justify-content: center;
+}
+
+.formDivButton button{
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+    margin-top: 25px;
+    padding: 0px;
+    background-color: #edb1f1;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.formDivButton button:hover{
+    background-color: #d59bf6;
+}
+
+.formDivButton a{
+    color: rgb(3, 3, 153);
+    cursor: pointer;
+}
+
+.formDiv h3{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.AlertMessage{
+    left: 50%;
+    bottom: 25%;
+    z-index: 999;
+    width: 180px;
+    display: none;
+    padding: 50px;
+    position: fixed;
+    border: 1px solid;
+    height: fit-content;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    box-shadow: inset -1px -1px 20px 0.5px rgb(0 0 0 / 38%);
+    border-radius: 30px;
+}
+
+.MessageContent{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+
+.AlertContent{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.AlertDiv button{
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #edb1f1;
+    transition: 0.5s;
+}
+
+.AlertDiv button:hover{
+    background-color: #d59bf6;
+}
+
+#passwordInput{
+    padding-left: 24px;
+}
+
+.passIcon, .passIcon2{
+    margin-top: -33px; 
+    margin-left: 5px;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+
+@media (min-width: 800px){
+    .mainDiv {
+        height: 180%;
+    }
+}
+
+
+@media (max-width: 800px){
+    .mainDiv{
+        height: 100%;
+    }
+
+    .headerDiv h1{
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
+
+    .formDiv h2{
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+    
+    .formDiv input{
+        width: 90%;
+        height: 25px;
+        font-size: 15px;
+    }
+    .formDiv h3{
+        font-size: 15px;
+    }
+
+    .formDivButton button{
+        font-size: 15px;
+        width: 100px;
+        height: 25px;
+    }
+
+    .alignmentDiv{
+        margin-top: 30%;
+    }
+
+    .passIcon{
+        margin-top: -23px;
+        font-size: 12px;
+    }
+
+    .passIcon2{
+        margin-top: -18px;
+        font-size: 12px;
+    }
+}
